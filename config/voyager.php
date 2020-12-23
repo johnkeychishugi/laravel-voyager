@@ -8,7 +8,7 @@ return [
     |
     | Here you can specify voyager user configs
     |
-    */
+    */  
 
     'user' => [
         'add_default_role_on_register' => true,
@@ -52,7 +52,7 @@ return [
     |
     | Here you can specify attributes related to your application file system
     |
-    */
+    */ 
 
     'storage' => [
         'disk' => env('FILESYSTEM_DRIVER', 'public'),
@@ -144,7 +144,11 @@ return [
         ],
 
         'widgets' => [
-
+            'TCG\\Voyager\\Widgets\\UserDimmer',
+            'TCG\\Voyager\\Widgets\\PostDimmer',
+            'TCG\\Voyager\\Widgets\\PageDimmer',
+            'App\\Widgets\\Products',
+            
         ],
 
     ],
